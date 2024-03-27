@@ -56,6 +56,7 @@ model_ols <- train(`work hours` ~ .,
 ## Warning: In predict.lm(modelFit, newdata) :
 ## prediction from rank-deficient fit; attr(*, "non-estim") has doubtful cases
 ## saveRDS(model_ols, "OLSmodel.RDS")
+## model_ols <- readRDS("OLSmodel.RDS")
 ols_predict <- predict(model_ols, gss_test_tbl, na.action = na.pass)
 
 
